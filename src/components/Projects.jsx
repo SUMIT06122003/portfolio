@@ -57,7 +57,7 @@ export default function Projects() {
       links: [
         {
           label: "Portfolio Demo",
-          href: "https://my-portfoilio-sumit.netlify.app/",
+          href: "https://portfolio-iota-umber-l7p1zjlc8j.vercel.app/",
         },
       ],
     },
