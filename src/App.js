@@ -13,6 +13,11 @@ export default function App() {
       target.style.setProperty("--reveal-delay", `${Math.min(index % 6, 5) * 70}ms`);
     });
 
+    if (!("IntersectionObserver" in window)) {
+      revealTargets.forEach((target) => target.classList.add("is-visible"));
+      return undefined;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
