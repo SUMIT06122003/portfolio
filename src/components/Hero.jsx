@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Profile from "../assets/profile.jpg";
+import Profile from "../assets/profile.jpeg";
 import Resume from "../assets/Sumit_Singh_Resume.pdf";
 
 const texts = [
