@@ -4,10 +4,10 @@ import Resume from "../assets/Sumit_Singh_Resume.pdf";
 
 const texts = [
   "Data Analyst",
-  "Data Science Engineer",
-  "Full Stack Developer",
-  "App Developer",
-  "Freelance Problem Solver",
+  "Business Analyst",
+  "Data Scientist",
+  "Data Engineer",
+  "BI Dashboard Developer",
 ];
 
 export default function Hero() {
@@ -47,15 +47,15 @@ export default function Hero() {
           Hi, I am <span>Sumit Singh</span>
         </h1>
         <h2>
-          I turn raw data into clear dashboards, insights, and intelligent
-          products as a <strong className="typing-text">{text}</strong>.
+          I turn raw data into business dashboards, insights, and predictive
+          analysis as a <strong className="typing-text">{text}</strong>.
         </h2>
         <p className="hero-summary">
-          I work across data analysis, data science, and full-stack
-          development: from cleaning data and building Power BI or Excel
-          dashboards to creating Python/SQL workflows, predictive models, APIs,
-          responsive MERN/Firebase web apps, and mobile-ready apps that make
-          insights easy to use.
+          My main domain is data. I work across data analytics, business
+          analytics, data science, and data engineering: from cleaning Kaggle
+          datasets and writing SQL/Python workflows to building Power BI
+          dashboards, KPI reports, machine learning prototypes, and
+          decision-ready business insights.
         </p>
 
         <div className="hero-actions">
@@ -63,22 +63,22 @@ export default function Hero() {
             Download Resume
           </a>
           <a href="#contact" className="secondary-btn">
-            Hire Me for Freelance Work
+            Hire Me for Data Work
           </a>
         </div>
 
         <div className="hero-metrics" aria-label="Portfolio highlights">
           <div>
-            <strong>Analytics</strong>
-            <span>Dashboards, reports, KPIs</span>
+            <strong>Data Analytics</strong>
+            <span>Excel, SQL, Power BI, KPIs</span>
           </div>
           <div>
-            <strong>Data Science</strong>
-            <span>Python, ML, forecasting</span>
+            <strong>Business Analytics</strong>
+            <span>Trends, reports, decisions</span>
           </div>
           <div>
-            <strong>Apps + Full Stack</strong>
-            <span>React, Node, Firebase, mobile</span>
+            <strong>Data Science + Engineering</strong>
+            <span>Python, ML, pipelines</span>
           </div>
         </div>
       </div>
@@ -87,10 +87,10 @@ export default function Hero() {
         <div className="profile-card">
           <img src={Profile} alt="Sumit Singh" />
           <div>
-            <h3>Available for projects</h3>
+            <h3>Available for data projects</h3>
             <p>
-              Dashboards, data analysis, ML prototypes, full-stack apps, and
-              mobile apps.
+              Power BI dashboards, SQL analysis, data cleaning, business
+              reports, ML prototypes, and analytics portfolios.
             </p>
           </div>
         </div>
@@ -107,9 +107,9 @@ export default function Hero() {
             <span style={{ height: "64%" }}></span>
           </div>
           <ul>
-            <li>Data cleaning and SQL analysis</li>
-            <li>Business dashboards and KPI tracking</li>
-            <li>ML, web, and app deployment-ready demos</li>
+            <li>Data cleaning, modeling, and SQL analysis</li>
+            <li>Business dashboards and KPI storytelling</li>
+            <li>Machine learning and data pipeline prototypes</li>
           </ul>
         </div>
       </div>

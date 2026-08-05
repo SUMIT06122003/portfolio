@@ -1,59 +1,51 @@
 import React from "react";
+import ibmDashboard from "../assets/dashboards/ibm-dashboard.jpeg";
+import nvidiaDashboard from "../assets/dashboards/nvidia-dashboard.jpeg";
 
 export default function Projects() {
   const projects = [
     {
+      title: "IBM HR Analytics Power BI Dashboard",
+      tag: "Power BI + Kaggle",
+      image: ibmDashboard,
+      description:
+        "Created an interactive HR analytics dashboard using an IBM employee dataset from Kaggle. The report explores employee count, job level, overtime, education field, department, business travel, role distribution, and gender breakdown.",
+      links: [],
+    },
+    {
+      title: "NVIDIA GPU Sales BI Dashboard",
+      tag: "Power BI + Kaggle",
+      image: nvidiaDashboard,
+      description:
+        "Built a dark-themed NVIDIA GPU business intelligence dashboard from a Kaggle dataset, tracking revenue, units sold, customer rating, selling price, region-wise revenue, stock status, GPU model, and product family performance.",
+      links: [],
+    },
+    {
       title: "Freelance Data Analytics Services",
       tag: "Available",
       description:
-        "Dashboards, Excel/Power BI reporting, SQL analysis, data cleaning, KPI tracking, full-stack web apps, mobile apps, and insight summaries for small businesses, students, and creators.",
+        "Power BI dashboards, Excel reporting, SQL analysis, data cleaning, KPI tracking, business analytics summaries, and data storytelling for students, creators, and small businesses.",
       links: [{ label: "Start a Project", href: "#contact" }],
     },
     {
       title: "Smart Travel Assistance",
       tag: "Data Science",
       description:
-        "Final-year major project focused on smarter travel support using structured data, recommendation logic, and a user-friendly application experience.",
+        "Final-year major project focused on smarter travel support using structured data, recommendation logic, analysis workflows, and a user-friendly decision support experience.",
       links: [],
     },
     {
-      title: "CustomX App",
-      tag: "Full Stack + App",
+      title: "Data Cleaning and KPI Reporting",
+      tag: "Analytics",
       description:
-        "Built admin and player panels for Free Fire paid tournaments and matches, including CustomX 2.0 with improved UI, KYC panel, and app-ready delivery.",
-      links: [{ label: "APK Demo", href: "https://customx-1.netlify.app/" }],
+        "Practice projects focused on transforming raw datasets into clean tables, meaningful metrics, dashboard-ready models, and business-friendly summaries using Excel, SQL, Python, and Power BI.",
+      links: [],
     },
     {
-      title: "Expense Tracker App",
-      tag: "App + Analytics",
-      description:
-        "A CRUD expense tracker built with React and Firebase. The project demonstrates clean data capture, filtering potential, and mobile export as an APK.",
-      links: [
-        {
-          label: "GitHub",
-          href: "https://github.com/SUMIT06122003/expense-tracker",
-        },
-        {
-          label: "Live Demo",
-          href: "https://expense-tracker-bysumit.netlify.app/",
-        },
-      ],
-    },
-    {
-      title: "CodexIntern Internship Project",
-      tag: "Frontend",
-      description:
-        "Created a responsive testing website during my frontend internship, strengthening my UI development and deployment skills.",
-      links: [
-        { label: "GitHub", href: "https://github.com/SUMIT06122003/codexintern" },
-        { label: "Live Demo", href: "https://codexintern.netlify.app/" },
-      ],
-    },
-    {
-      title: "College Projects",
+      title: "Portfolio and Learning Projects",
       tag: "Practice",
       description:
-        "Built a quiz app, calculator, shoes shopping website, book store management system, and this responsive portfolio.",
+        "Built dashboards, analytics exercises, SQL/Python practice notebooks, and this portfolio to present data work, certifications, and project outcomes clearly.",
       links: [
         {
           label: "Portfolio Demo",
@@ -71,6 +63,9 @@ export default function Projects() {
       <div className="project-grid">
         {projects.map((project) => (
           <article className="project-card" key={project.title}>
+            {project.image && (
+              <img className="project-image" src={project.image} alt={project.title} />
+            )}
             <span className="status-pill">{project.tag}</span>
             <h3>{project.title}</h3>
             <p>{project.description}</p>

@@ -7,6 +7,6 @@ test("renders portfolio hero content", () => {
   expect(
     screen.getByText(/Open to freelance and remote opportunities/i)
   ).toBeInTheDocument();
-  expect(screen.getByText(/Data \+ Full Stack \+ Apps/i)).toBeInTheDocument();
+  expect(screen.getByText(/Data Analytics \+ BI \+ Data Science/i)).toBeInTheDocument();
   expect(screen.getByText(/Download Resume/i)).toBeInTheDocument();
 });

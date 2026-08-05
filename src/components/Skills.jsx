@@ -3,15 +3,12 @@ import {
   FaChartLine,
   FaDatabase,
   FaFileExcel,
-  FaMobileAlt,
   FaPython,
-  FaReact,
   FaServer,
 } from "react-icons/fa";
 import {
-  SiFirebase,
+  SiApacheairflow,
   SiJupyter,
-  SiMongodb,
   SiPandas,
   SiScikitlearn,
 } from "react-icons/si";
@@ -28,6 +25,15 @@ export default function Skills() {
       ],
     },
     {
+      title: "Business Analytics",
+      skills: [
+        { name: "Business KPIs", icon: <FaChartLine /> },
+        { name: "Trend Analysis", icon: <FaChartLine /> },
+        { name: "Reporting", icon: <FaFileExcel /> },
+        { name: "Decision Insights", icon: <FaDatabase /> },
+      ],
+    },
+    {
       title: "Data Science",
       skills: [
         { name: "Python", icon: <FaPython /> },
@@ -37,20 +43,12 @@ export default function Skills() {
       ],
     },
     {
-      title: "Full Stack Development",
+      title: "Data Engineering",
       skills: [
-        { name: "React", icon: <FaReact /> },
-        { name: "Node.js / Express", icon: <FaServer /> },
-        { name: "Mobile Apps", icon: <FaMobileAlt /> },
-        {
-          name: "MongoDB / Firebase",
-          icon: (
-            <>
-              <SiMongodb />
-              <SiFirebase />
-            </>
-          ),
-        },
+        { name: "Data Pipelines", icon: <SiApacheairflow /> },
+        { name: "ETL Workflows", icon: <FaServer /> },
+        { name: "SQL Databases", icon: <FaDatabase /> },
+        { name: "Python Automation", icon: <FaPython /> },
       ],
     },
   ];
@@ -58,7 +56,7 @@ export default function Skills() {
   return (
     <section id="skills" className="section section-raised">
       <p className="eyebrow">Relevant skills</p>
-      <h2>Data, Science, Full Stack, and App Toolkit</h2>
+      <h2>Analytics, BI, Data Science, and Engineering Toolkit</h2>
       <div className="skill-groups">
         {skillGroups.map((group) => (
           <div className="skill-group" key={group.title}>

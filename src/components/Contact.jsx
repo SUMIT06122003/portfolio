@@ -53,9 +53,9 @@ export default function Contact() {
       <p className="eyebrow">Contact</p>
       <h2>Let Us Build Something Useful With Your Data</h2>
       <p className="section-intro">
-        I am open to freelance work for dashboards, data analysis, ML
-        prototypes, portfolio websites, full-stack apps, mobile apps, and
-        business web apps.
+        I am open to freelance work for Power BI dashboards, data cleaning, SQL
+        analysis, Excel reporting, business analytics, KPI tracking, machine
+        learning prototypes, and data engineering workflows.
       </p>
 
       <div className="contact-grid">

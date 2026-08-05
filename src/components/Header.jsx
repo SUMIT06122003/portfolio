@@ -47,7 +47,7 @@ export default function Header() {
 
       <a href="#who" className="site-name">
         Sumit Singh
-        <span>Data + Full Stack + Apps</span>
+        <span>Data Analytics + BI + Data Science</span>
       </a>
 
       <nav className="desktop-menu" aria-label="Main navigation">
